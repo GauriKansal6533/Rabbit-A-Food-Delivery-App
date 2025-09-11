@@ -9,7 +9,7 @@ const StoreContextProvider = (props) => {
   const [token, setToken] = useState("");
   const [userId, setUserId] = useState(""); // store userId
   const [food_list, setFoodList] = useState(static_food_list);
-  const url = "http://localhost:4000";
+  const url = "https://rabbit-a-food-delivery-app-backend.onrender.com";
 
   // Add to cart functionality
   const addToCart = async (itemId) => {
