@@ -1,0 +1,62 @@
+/* Global CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  /* Remove link underline */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Button reset */
+  button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+  }
+  
+  /* Image responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* List reset */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Input and Textarea reset */
+  input, textarea {
+    font-family: inherit;
+    outline: none;
+    border: none;
+  }
+  
+  /* Dark mode support (optional) */
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  

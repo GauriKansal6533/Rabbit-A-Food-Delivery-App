@@ -1,0 +1,91 @@
+.app-download {
+    margin: 100px auto 0 auto;
+    text-align: center;
+    font-weight: 600;
+    font-size: max(3vw, 24px);
+    color: #ffffff;
+    margin-bottom: 100px;
+    line-height: 1.4;
+    padding:  50px 20px 20px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(255,0,0,0.8), rgba(255,100,100,0.8));
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.15);
+    animation: fadeIn 1s ease-in-out;
+    z-index: 1;
+}
+
+.app-download-subtext::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: floatCircle 6s ease-in-out infinite alternate;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+    z-index: -1;
+}
+
+@keyframes floatCircle {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(50px, 50px);
+    }
+}
+
+
+.app-download-subtext {
+    font-size: max(1.5vw, 16px);
+    color: #f5f5f5;
+    margin-top: 10px;
+    opacity: 0.9;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.app-download-platforms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: max(2vw, 20px);
+    margin-top: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.app-download-platforms img {
+    width: max(25vw, 140px);
+    max-width: 200px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.2);
+    filter: brightness(0.9);   
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    animation: fadeIn 1s ease-in-out;
+    animation-delay: 0.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+.app-download-platforms img:hover {
+    transform: scale(1.08) translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255, 0, 0, 0.25);
+    filter: brightness(1.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+    
+}
+

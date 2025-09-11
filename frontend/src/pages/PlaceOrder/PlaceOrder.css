@@ -1,0 +1,138 @@
+.place-order {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 100px;
+  padding: 0 5%;
+  flex-wrap: wrap;
+}
+
+.place-order-left {
+  flex: 1;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 300px;
+}
+
+.place-order-left .title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.place-order-left input {
+  width: 100%;
+  padding: 15px;
+  background-color: #f9f9f9;
+  
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.place-order-left input:focus {
+  border-color: #ff4d4d;
+}
+
+.multi-fields {
+  display: flex;
+  gap: 15px;
+}
+
+.multi-fields input {
+  flex: 1;
+}
+
+/* Cart Summary on the Right */
+.place-order-right {
+  flex: 1;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  min-width: 300px;
+}
+
+.cart-total {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.cart-total h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+  font-size: 18px;
+}
+
+.cart-total hr {
+  border: none;
+  height: 1px;
+  background: #eee;
+}
+
+.cart-total button {
+  margin-top: 30px;
+  padding: 14px;
+  background-color: #ff4d4d;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cart-total button:hover {
+  background-color: #e03e3e;
+  transform: translateY(-2px);
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-group label {
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+  .place-order {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .place-order-left, .place-order-right {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .multi-fields {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

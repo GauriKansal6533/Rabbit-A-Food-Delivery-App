@@ -1,0 +1,118 @@
+/* Sidebar styles */
+.sidebar {
+    width: 220px;
+    min-height: 100vh;
+    background: rgba(255, 63, 63, 0.7); /* semi-transparent red */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Sidebar options */
+  .sidebar-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  /* Sidebar option item */
+  .sidebar-option {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+  
+  /* Sidebar option icon */
+  .sidebar-option img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Sidebar option text */
+  .sidebar-option p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  /* Hover and Active styles */
+  .sidebar-option:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .sidebar-option.active {
+    background: white;
+    color: #ff3f3f;
+    font-weight: 600;
+  }
+  
+  /* Dark Mode */
+  .sidebar.dark {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Media Queries for Mobile Responsiveness */
+  @media (max-width: 768px) {
+    /* On smaller screens, hide the sidebar by default */
+    .sidebar {
+      display: none;
+    }
+  
+    /* Sidebar toggle button for mobile */
+    .sidebar-toggle {
+      display: block;
+      font-size: 30px;
+      color: white;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  
+    /* Adjust sidebar options on mobile */
+    .sidebar-options {
+      gap: 15px;
+      padding: 0 15px;
+    }
+  
+    /* Adjust icon size on mobile */
+    .sidebar-option img {
+      width: 20px;
+      height: 20px;
+    }
+  
+    /* Adjust font size for mobile */
+    .sidebar-option p {
+      font-size: 14px;
+    }
+  }
+  
+  /* For even smaller screens like mobile */
+  @media (max-width: 480px) {
+    /* Reduce padding and gap further on very small screens */
+    .sidebar-options {
+      gap: 10px;
+      padding: 0 10px;
+    }
+  
+    .sidebar-option img {
+      width: 18px;
+      height: 18px;
+    }
+  
+    .sidebar-option p {
+      font-size: 12px;
+    }
+  }
+  

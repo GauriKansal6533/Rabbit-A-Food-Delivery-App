@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 60px 20px 20px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content-left,
+.footer-content-center,
+.footer-content-right {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    padding: 20px;
+}
+
+.footer-content-left h2,
+.footer-content-center h2,
+.footer-content-right h2 {
+    color: #f44336; /* Zomato Red accent */
+    margin-bottom: 20px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.footer-content-left p {
+    font-size: 14px;
+    color: #bbb;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-social-icons img {
+    width: 35px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s;
+    filter: brightness(80%);
+}
+
+.footer-social-icons img:hover {
+    transform: scale(1.1);
+    filter: brightness(150%);
+}
+
+.footer-content-center ul,
+.footer-content-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content-center li,
+.footer-content-right li {
+    margin-bottom: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s;
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-content-center li:hover,
+.footer-content-right li:hover {
+    color: #f44336; /* Zomato Red hover */
+    text-decoration: underline;
+}
+
+.footer-content-right img {
+    width: 120px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    filter: brightness(80%);
+}
+
+.footer-content-right img:hover {
+    transform: scale(1.05);
+    filter: brightness(100%);
+}
+
+hr {
+    margin: 40px 0 20px;
+    border: 0.5px solid #333;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    text-align: center;
+    color: #bbb;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+@media (max-width: 1024px) {
+    .footer-content {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-content-left,
+    .footer-content-center,
+    .footer-content-right {
+        margin-bottom: 30px;
+    }
+
+    .footer-content-left h2,
+    .footer-content-center h2,
+    .footer-content-right h2 {
+        font-size: 22px;
+    }
+
+    .footer-content-left p {
+        font-size: 13px;
+    }
+
+    .footer-social-icons img {
+        width: 30px;
+    }
+
+    .footer-content-center li,
+    .footer-content-right li {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 40px 10px 10px;
+    }
+
+    .footer-content-left h2,
+    .footer-content-center h2,
+    .footer-content-right h2 {
+        font-size: 20px;
+    }
+
+    .footer-content-left p {
+        font-size: 12px;
+    }
+
+    .footer-social-icons img {
+        width: 25px;
+        margin-right: 10px;
+    }
+
+    .footer-content-center li,
+    .footer-content-right li {
+        font-size: 12px;
+    }
+
+    .footer-copyright {
+        font-size: 10px;
+    }
+}

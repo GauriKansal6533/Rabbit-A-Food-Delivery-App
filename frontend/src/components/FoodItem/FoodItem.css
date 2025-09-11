@@ -1,0 +1,173 @@
+.food-item {
+    width: 100%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    overflow: hidden;
+    border: 1px solid #f0f0f0; /* Subtle border for a cleaner look */
+    padding: 15px;
+}
+
+.food-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.12); /* Soft, classy shadow */
+    cursor: pointer;
+}
+
+.food-item-image {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    height: 230px; /* Slightly increased image height for a more prominent visual */
+    transition: transform 0.4s ease;
+}
+
+.food-item-info {
+    padding: 20px;
+    text-align: left;
+    background-color: #fff;
+}
+
+.food-item-name-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.food-item-name-rating p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #444;
+    margin: 0;
+}
+
+.food-item-name-rating img {
+    width: 80px; /* Adjusted size for better proportion */
+}
+
+.food-item-desc {
+    color: #777;
+    font-size: 15px;
+    margin-top: 12px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.food-item-price {
+    color: #ff6347; /* Modern Tomato Red for price */
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-item-img-container {
+    position: relative;
+    width: 100%;
+    height: 230px;
+}
+
+.food-item-img-container .add {
+    width: 45px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+}
+
+.food-item-img-container .add:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.18);
+}
+
+.food-item-counter {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    border-radius: 50px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.food-item-counter img {
+    width: 32px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.food-item-counter:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.18);
+}
+
+.food-item-counter:hover img {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .food-item {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .food-item-name-rating {
+        font-size: 18px;
+    }
+
+    .food-item-price {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .food-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .food-item-name-rating {
+        font-size: 16px;
+    }
+
+    .food-item-desc {
+        font-size: 12px;
+    }
+
+    .food-item-price {
+        font-size: 18px;
+    }
+}

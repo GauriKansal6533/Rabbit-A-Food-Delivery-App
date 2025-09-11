@@ -1,0 +1,71 @@
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; /* Changed default font to Poppins for modern look */
+}
+
+/* Body Styling */
+body {
+  min-height: 100vh;
+  background-color: #f7f7f7; /* Lighter background for a cleaner interface */
+  color: #333; /* Darker text for better contrast */
+  line-height: 1.6; /* Adjust line-height for better readability */
+}
+
+/* Link Styling */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+/* Add subtle hover effect to links */
+a:hover {
+  color: #ff5c5c; /* Matches the red theme for interactive links */
+}
+
+/* Horizontal line styling */
+hr {
+  border: none;
+  height: 1px;
+  background-color: #e1e1e1; /* Lighter gray to soften the appearance */
+  margin: 10px 0;
+}
+
+/* Main content layout */
+.app-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+/* Flex column layout */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Cursor style */
+.cursor {
+  cursor: pointer;
+}
+
+/* Make sure everything looks good for smaller screens */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .app-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

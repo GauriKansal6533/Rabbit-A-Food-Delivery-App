@@ -1,0 +1,126 @@
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Global reset */
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Base body settings */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* Anchor tags */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Default button reset */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Image reset */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+}
+
+/* App layout */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Footer stick to bottom */
+.footer {
+  margin-top: auto;
+}
+
+/* Full-screen reusable layout */
+.full-screen {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* ----------- */
+/* Specific page-level styles */
+/* These will NOT affect other components because they are wrapped */
+/* ----------- */
+
+/* PlaceOrder page */
+.place-order-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 5%;
+  background-color: #fff;
+}
+
+.place-order-left, 
+.place-order-right {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.place-order-left {
+  flex: 3;
+}
+
+.place-order-right {
+  flex: 2;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .place-order-wrapper {
+    flex-direction: column;
+    padding: 20px 5%;
+  }
+  
+  .place-order-left, 
+  .place-order-right {
+    width: 100%;
+  }
+}
