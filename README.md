@@ -19,7 +19,7 @@
   </p>
 
   <p align="center">
-    <a href="https://your-live-demo-link.com" target="_blank">Live Demo</a> • 
+    <a href="https://rabbit-a-food-delivery-appfrontend.onrender.com" target="_blank">Live Demo</a> • 
     <a href="#quick-start">Quick Start</a> • 
     <a href="#features">Features</a>
   </p>
